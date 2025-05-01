@@ -1,0 +1,43 @@
+# Operating System Files
+# Ignore macOS finder files and Windows thumbnail caches
+.DS_Store
+Thumbs.db
+
+# Editor & IDE Files
+# Ignore common editor temporary/backup files and settings folders
+*.swp
+*~
+*.bak
+*.tmp
+.vscode/
+.idea/
+
+# Hardware Design & Schematic Files
+# Ignore backups, netlists, reports, lock files from common tools (KiCad, Eagle, etc.)
+*-bak.*
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.sch-bak
+*.brd-bak
+*.lck
+*.net
+*.lst
+*.rpt
+*._autosave*
+
+# Build Artifacts & Logs
+# Ignore general log files and potential compiled output (e.g., from EEPROM programmer)
+*.log
+*.elf
+*.hex
+*.eep
+build/
+output/
+
+# Compressed Files
+# Often used for backups or distributing releases, usually not tracked
+*.zip
+*.rar
+*.gz
+*.tgz
