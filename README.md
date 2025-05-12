@@ -2,84 +2,79 @@
 
 ## Introduction
 
-Welcome to the repository for the 8-bit breadboard computer project! This project aims to build a functional 8-bit computer from basic logic gates and ICs on breadboards, following the inspirational design by Ben Eater.
+Welcome to the repository for my 8-bit breadboard computer project. This project aims to build a functional 8-bit computer from basic logic gates and ICs on breadboards, following the inspirational design by Ben Eater.
 
 **Project Goals:**
-* Gain a fundamental, hands-on understanding of low-level computing concepts, including CPU architecture, instruction set design, memory addressing, control logic, and the fetch-decode-execute cycle.
-* Develop practical skills in digital circuit design, troubleshooting electronic circuits, and interpreting datasheets..
-* Create comprehensive documentation detailing our design choices, build process, schematics, microcode, and challenges encountered, serving as a learning resource for ourselves and others.
+- Gain a fundamental, hands-on understanding of low-level computing concepts, including *CPU architecture*, *instruction set design*, *memory addressing*, *control logic*, and the *fetch-decode-execute cycle*.
+- Develop practical skills in digital circuit design, troubleshooting electronic circuits, and interpreting datasheets.
+- Create comprehensive documentation detailing our design choices, build process, schematics, microcode, and challenges encountered, serving as a learning resource for ourselves and others.
 
 **Based on:** [Ben Eater's 8-bit Computer Project](https://eater.net/8bit)
-
-## Team Members
-
-* Yonah Lahlou
-
 
 ## Modules
 
 This section details the individual components of our 8-bit computer. Each module was built and tested individually before system integration.
 
 ### 1. Clock Module
-* **Purpose:** Generates timing signals for the entire computer, supports variable speed, single-stepping, and halting.
-* **Schematic:** 
-* **Build Log & Notes:** 
-* **Status:**
+- **Purpose:** Generates timing signals for the entire computer, supports variable speed, single-stepping, and halting.
+- **Schematic:** 
+- **Build Log & Notes:** 
+- **Status:**
 
 ### 2. Register A
-* **Purpose:** An 8-bit general-purpose register used for temporary storage and ALU input.
-* **Schematic:** 
-* **Build Log & Notes:**
-* **Status:**
+- **Purpose:** An 8-bit general-purpose register used for temporary storage and ALU input.
+- **Schematic:** 
+- **Build Log & Notes:**
+- **Status:**
 
 ### 3. Register B
-* **Purpose:** An 8-bit general-purpose register, primarily used as the second input to the ALU.
-* **Schematic:**
-* **Build Log & Notes:**
-* **Status:**
+- **Purpose:** An 8-bit general-purpose register, primarily used as the second input to the ALU.
+- **Schematic:**
+- **Build Log & Notes:**
+- **Status:**
 
 ### 4. Arithmetic Logic Unit (ALU)
-* **Purpose:** Performs arithmetic (addition, subtraction) and logical operations on data from Registers A and B. Sets status flags (Zero, Carry).
-* **Schematic:**
-* **Build Log & Notes:**
-* **Status:**
+- **Purpose:** Performs arithmetic (addition, subtraction) and logical operations on data from Registers A and B. Sets status flags (Zero, Carry).
+- **Schematic:**
+- **Build Log & Notes:**
+- **Status:**
 
 ### 5. RAM Module
-* **Purpose:** Stores program instructions and data (e.g., 16 bytes using 74LS189 or larger static RAM). Includes the Memory Address Register (MAR).
-* **Schematic:**
-* **Build Log & Notes:**
-* **Status:**
+- **Purpose:** Stores program instructions and data (e.g., 16 bytes using 74LS189 or larger static RAM). Includes the Memory Address Register (MAR).
+- **Schematic:**
+- **Build Log & Notes:**
+- **Status:**
 
 ### 6. Program Counter (PC)
-* **Purpose:** Holds the memory address of the next instruction to be fetched. Can be incremented or loaded (for jumps).
-* **Schematic:**
-* **Build Log & Notes:**
-* **Status:**
+- **Purpose:** Holds the memory address of the next instruction to be fetched. Can be incremented or loaded (for jumps).
+- **Schematic:**
+- **Build Log & Notes:**
+- **Status:**
 
 ### 7. Output Register & Display
-* **Purpose:** Latches data from the bus to be displayed, typically on 7-segment LEDs.
-* **Schematic:**
-* **Build Log & Notes:**
-* **Status:**
+- **Purpose:** Latches data from the bus to be displayed, typically on 7-segment LEDs.
+- **Schematic:**
+- **Build Log & Notes:**
+- **Status:**
 
 ### 8. Instruction Register (IR)
-* **Purpose:** Holds the opcode of the current instruction being executed.
-* **Schematic:**
-* **Build Log & Notes:**
-* **Status:**
+- **Purpose:** Holds the opcode of the current instruction being executed.
+- **Schematic:**
+- **Build Log & Notes:**
+- **Status:**
 
 ### 9. Control Logic
-* **Purpose:** Decodes the instruction in the IR and orchestrates the control signals for all other modules during each step (T-state) of the instruction cycle. Implemented using EEPROMs (microcode).
-* **Schematic:**
-* **Microcode:**
-* **Build Log & Notes:**
-* **Status:**
+- **Purpose:** Decodes the instruction in the IR and orchestrates the control signals for all other modules during each step (T-state) of the instruction cycle. Implemented using EEPROMs (microcode).
+- **Schematic:**
+- **Microcode:**
+- **Build Log & Notes:**
+- **Status:**
 
 ## System Integration
 
-* **Bus:**
-* **Final System Schematic:**
-* **Integration Notes:**
+- **Bus:**
+- **Final System Schematic:**
+- **Integration Notes:**
 
 ## Instruction Set Architecture (ISA)
 
@@ -100,6 +95,7 @@ This section details the individual components of our 8-bit computer. Each modul
 
 ## Control Logic & Microcode
 
+//
 
 ## Challenges & Future Work
 
